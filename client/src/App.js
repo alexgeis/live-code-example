@@ -20,8 +20,57 @@ function App() {
       <main>
         <div className="codeRow">
           <aside>
-            <h2>Live Code Editor Section Title</h2>
-            <li>note 1 on this attempt</li>
+            <h2>Codepen Embed</h2>
+            <li>code is not editable unless on a PRO membership - $96/year</li>
+            <li>Solution is using html and javascript to embed</li>
+            <li>note 3 on this attempt</li>
+          </aside>
+
+          <div className="contents">
+            {/* CARD TEMPLATE */}
+            {/* <section className="card">
+              <header>Kitten for sale</header>
+              <img src="http://placekitten.com/200/300" alt="cute kitten" />
+              <p>Price: $300</p>
+            </section> */}
+            <section className="codeBlock">
+              <header>Diagonal Flexbox Example</header>
+              <p
+                class="codepen"
+                data-height="300"
+                data-default-tab="html,result"
+                data-slug-hash="WNMQPBZ"
+                data-user="alexngeis"
+                style={{
+                  height: "300px",
+                  boxSizing: "border-box",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  border: "2px solid",
+                  margin: "1em 0",
+                  padding: "1em",
+                  width: "100%",
+                }}
+              >
+                <span>
+                  See the Pen{" "}
+                  <a href="https://codepen.io/alexngeis/pen/WNMQPBZ">
+                    flexbox diagonal shifty demo prototype thingy
+                  </a>{" "}
+                  by Alex Geis (
+                  <a href="https://codepen.io/alexngeis">@alexngeis</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+                </span>
+              </p>
+              <p>Explanation of code</p>
+            </section>
+          </div>
+        </div>
+        <div className="codeRow">
+          <aside>
+            <h2>Code Sandbox</h2>
+            <li>using iframe rather than html/javascript</li>
             <li>note 2 on this attempt</li>
             <li>note 3 on this attempt</li>
           </aside>
@@ -33,6 +82,23 @@ function App() {
               <img src="http://placekitten.com/200/300" alt="cute kitten" />
               <p>Price: $300</p>
             </section> */}
+            <section>
+              <header>Header</header>
+              <iframe
+                src="https://codesandbox.io/embed/nameless-river-y10xmj?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.js&theme=dark"
+                style={{
+                  width: "100%",
+                  height: "500px",
+                  border: "0",
+                  borderRadius: "4px",
+                  overflow: "hidden",
+                }}
+                title="nameless-river-y10xmj"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              <p>Explanation of code</p>
+            </section>
           </div>
         </div>
         <div className="codeRow">
@@ -50,6 +116,11 @@ function App() {
               <img src="http://placekitten.com/200/300" alt="cute kitten" />
               <p>Price: $300</p>
             </section> */}
+            <section>
+              <header>Header</header>
+
+              <p>Explanation of code</p>
+            </section>
           </div>
         </div>
       </main>
