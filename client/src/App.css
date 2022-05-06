@@ -48,6 +48,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  border-bottom: #13293d 2px solid;
 }
 
 aside {
@@ -55,10 +56,6 @@ aside {
   background-color: #008996;
   padding: 40px;
   text-align: left;
-}
-
-.asideFlip {
-  
 }
 
 footer {
@@ -72,7 +69,7 @@ footer {
 }
 
 .contents {
-  flex: 4;
+  flex: 5;
   background-color: #ece2d0;
   padding: 50px;
   display: flex;
@@ -108,7 +105,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  main,
+  .codeRow,
   nav {
     flex-direction: column;
   }

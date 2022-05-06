@@ -15,8 +15,6 @@ function App() {
       <nav>
         <a href="#">Nav Link 1</a>
         <a href="#">Nav Link 2</a>
-        <a href="#">Nav Link 3</a>
-        <a href="#">Nav Link 4</a>
       </nav>
 
       <main>
@@ -38,7 +36,7 @@ function App() {
           </div>
         </div>
         <div className="codeRow">
-          <aside className="asideFlip">
+          <aside>
             <h2>Live Code Editor Section Title</h2>
             <li>note 1 on this attempt</li>
             <li>note 2 on this attempt</li>
