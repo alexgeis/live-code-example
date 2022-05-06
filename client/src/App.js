@@ -5,13 +5,6 @@ import "./App.css";
 function App() {
   return (
     <div classNameName="App">
-      <header>
-        <h1>Live Code Editor Sandbox!</h1>
-        <p>
-          Below are my active attempts to develop a live code editor I can reuse
-        </p>
-      </header>
-
       <nav>
         <a href="#">Nav Link 1</a>
         <a href="#">Nav Link 2</a>
