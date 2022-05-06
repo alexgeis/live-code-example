@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -117,10 +118,7 @@ function App() {
           </div>
         </div>
       </main>
-
-      <footer>
-        <h3>End of the line!</h3>
-      </footer>
+      <Footer />
     </div>
   );
 }
