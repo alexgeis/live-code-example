@@ -13,10 +13,10 @@ function App() {
       </header>
 
       <nav>
-        <a href="#">Camera</a>
-        <a href="#">Tablet</a>
-        <a href="#">Toilet Paper</a>
-        <a href="#">Wooden Spoons</a>
+        <a href="#">Nav Link 1</a>
+        <a href="#">Nav Link 2</a>
+        <a href="#">Nav Link 3</a>
+        <a href="#">Nav Link 4</a>
       </nav>
 
       <main>
