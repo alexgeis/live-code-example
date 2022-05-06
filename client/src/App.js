@@ -38,10 +38,7 @@ function App() {
       </main>
 
       <footer>
-        <h3>
-          Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-          window!
-        </h3>
+        <h3>End of the line!</h3>
       </footer>
     </div>
   );

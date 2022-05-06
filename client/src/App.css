@@ -34,7 +34,7 @@ header {
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: #ff671d;
 }
 
 nav a {
@@ -52,7 +52,7 @@ main {
 
 aside {
   flex: 1;
-  background-color: #b9c6ae;
+  background-color: #008996;
   padding: 40px;
   text-align: left;
 }
@@ -69,7 +69,7 @@ footer {
 
 .contents {
   flex: 4;
-  background-color: #fff;
+  background-color: #ece2d0;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
