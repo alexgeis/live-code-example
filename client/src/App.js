@@ -27,7 +27,7 @@ function App() {
           <li>note 3 on this attempt</li>
         </aside>
 
-        <div className="products">
+        <div className="contents">
           {/* CARD TEMPLATE */}
           {/* <section className="card">
             <header>Kitten for sale</header>
