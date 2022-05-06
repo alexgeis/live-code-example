@@ -44,7 +44,7 @@ nav a {
   text-align: center;
 }
 
-main {
+.codeRow {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
