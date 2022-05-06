@@ -19,23 +19,25 @@ function App() {
         <a href="#">Nav Link 4</a>
       </nav>
 
-      <div className="row">
-        <aside>
-          <h2>Live Code Editor Section Title</h2>
-          <li>note 1 on this attempt</li>
-          <li>note 2 on this attempt</li>
-          <li>note 3 on this attempt</li>
-        </aside>
+      <main>
+        <div className="codeRow">
+          <aside>
+            <h2>Live Code Editor Section Title</h2>
+            <li>note 1 on this attempt</li>
+            <li>note 2 on this attempt</li>
+            <li>note 3 on this attempt</li>
+          </aside>
 
-        <div className="contents">
-          {/* CARD TEMPLATE */}
-          {/* <section className="card">
-            <header>Kitten for sale</header>
-            <img src="http://placekitten.com/200/300" alt="cute kitten" />
-            <p>Price: $300</p>
-          </section> */}
+          <div className="contents">
+            {/* CARD TEMPLATE */}
+            {/* <section className="card">
+              <header>Kitten for sale</header>
+              <img src="http://placekitten.com/200/300" alt="cute kitten" />
+              <p>Price: $300</p>
+            </section> */}
+          </div>
         </div>
-      </div>
+      </main>
 
       <footer>
         <h3>End of the line!</h3>
