@@ -37,6 +37,23 @@ function App() {
             </section> */}
           </div>
         </div>
+        <div className="codeRow">
+          <aside className="asideFlip">
+            <h2>Live Code Editor Section Title</h2>
+            <li>note 1 on this attempt</li>
+            <li>note 2 on this attempt</li>
+            <li>note 3 on this attempt</li>
+          </aside>
+
+          <div className="contents">
+            {/* CARD TEMPLATE */}
+            {/* <section className="card">
+              <header>Kitten for sale</header>
+              <img src="http://placekitten.com/200/300" alt="cute kitten" />
+              <p>Price: $300</p>
+            </section> */}
+          </div>
+        </div>
       </main>
 
       <footer>
