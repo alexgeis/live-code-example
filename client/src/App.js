@@ -17,7 +17,7 @@ function App() {
             <h2>Codepen Embed</h2>
             <li>code is not editable unless on a PRO membership - $96/year</li>
             <li>Solution is using html and javascript to embed</li>
-            <li>note 3 on this attempt</li>
+            <li>Offers HTML, CSS, and JS editting</li>
           </aside>
 
           <div className="contents">
