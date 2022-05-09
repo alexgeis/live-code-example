@@ -8,15 +8,20 @@ import Footer from "./components/Footer";
 //ACE IMPORTS
 import { render } from "react-dom";
 import AceEditor from "react-ace";
-
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/ext-language_tools";
+
+//React Textarea Code Editor Import
+import CodeEditor from "@uiw/react-textarea-code-editor";
 
 function App() {
   function aceChange(newValue) {
     console.log("change", newValue);
   }
+  const [reactCodeEditor, setReactCodeEditor] = React.useState(
+    `function add(a, b) {\n  return a + b;\n}`
+  );
 
   return (
     <div classNameName="App">
@@ -111,6 +116,47 @@ function App() {
           </div>
         </div>
 
+        <div className="codeRow">
+          <aside>
+            <h2>
+              <a
+                href="https://uiwjs.github.io/react-textarea-code-editor/"
+                target="_blank"
+              >
+                React Live Code Editor
+              </a>
+            </h2>
+            <li>note 1 on this attempt</li>
+            <li>note 2 on this attempt</li>
+            <li>note 3 on this attempt</li>
+          </aside>
+
+          <div className="contents">
+            {/* CARD TEMPLATE */}
+            {/* <section className="card">
+              <header>Kitten for sale</header>
+              <img src="http://placekitten.com/200/300" alt="cute kitten" />
+              <p>Price: $300</p>
+            </section> */}
+            <section className="codeBlock">
+              <header>Header</header>
+              <CodeEditor
+                value={code}
+                language="js"
+                placeholder="Please enter JS code."
+                onChange={(evn) => setCode(evn.target.value)}
+                padding={15}
+                style={{
+                  fontSize: 12,
+                  backgroundColor: "#f5f5f5",
+                  fontFamily:
+                    "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
+                }}
+              />
+              <p>Explanation of code</p>
+            </section>
+          </div>
+        </div>
         <div className="codeRow">
           <aside>
             <h2>Live Code Editor Section Title</h2>
