@@ -57,7 +57,10 @@ function App() {
                   <a href="https://codepen.io">CodePen</a>.
                 </span>
               </p>
-              <p>Explanation of code</p>
+              <p>
+                As you can see above, the embed does not remain active for long
+                and turns into this hyperlink.
+              </p>
             </section>
           </div>
         </div>
