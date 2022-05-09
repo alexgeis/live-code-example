@@ -5,14 +5,18 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
+//ACE IMPORTS
+import { render } from "react-dom";
+import AceEditor from "react-ace";
+
+import "ace-builds/src-noconflict/mode-java";
+import "ace-builds/src-noconflict/theme-github";
+import "ace-builds/src-noconflict/ext-language_tools";
+
 function App() {
-  const ace = function (items) {
-    var x = "All this is syntax highlighted";
-    return x;
-  };
-  var editor = ace.edit("editor");
-  editor.setTheme("ace/theme/monokai");
-  editor.session.setMode("ace/mode/javascript");
+  function aceChange(newValue) {
+    console.log("change", newValue);
+  }
 
   return (
     <div classNameName="App">
@@ -106,28 +110,7 @@ function App() {
             </section>
           </div>
         </div>
-        <div className="codeRow">
-          <aside>
-            <h2>Ace</h2>
-            <li>open source</li>
-            <li>note 2 on this attempt</li>
-            <li>note 3 on this attempt</li>
-          </aside>
 
-          <div className="contents">
-            {/* CARD TEMPLATE */}
-            {/* <section className="card">
-              <header>Kitten for sale</header>
-              <img src="http://placekitten.com/200/300" alt="cute kitten" />
-              <p>Price: $300</p>
-            </section> */}
-            <section className="codeBlock">
-              <header>Header</header>
-              <div id="editor"></div>
-              <p>Explanation of code</p>
-            </section>
-          </div>
-        </div>
         <div className="codeRow">
           <aside>
             <h2>Live Code Editor Section Title</h2>
@@ -157,3 +140,40 @@ function App() {
 }
 
 export default App;
+
+// ACE ATTEMPT
+// <div className="codeRow">
+//           <aside>
+//             <h2>Ace</h2>
+//             <li>open source</li>
+//             <li>note 2 on this attempt</li>
+//             <li>note 3 on this attempt</li>
+//           </aside>
+
+//           <div className="contents">
+//             {/* CARD TEMPLATE */}
+//             {/* <section className="card">
+//               <header>Kitten for sale</header>
+//               <img src="http://placekitten.com/200/300" alt="cute kitten" />
+//               <p>Price: $300</p>
+//             </section> */}
+//             <section className="codeBlock">
+//               <header>Header</header>
+//               render(
+//               <AceEditor
+//                 mode="java"
+//                 theme="github"
+//                 onChange={aceChange}
+//                 name="aceEditor"
+//                 editorProps={{ $blockScrolling: true }}
+//                 setOptions={{
+//                   enableBasicAutocompletion: true,
+//                   enableLiveAutocompletion: true,
+//                   enableSnippets: true,
+//                 }}
+//               />
+//               , document.getElementById("aceEditor") );
+//               <p>Explanation of code</p>
+//             </section>
+//           </div>
+//         </div>
