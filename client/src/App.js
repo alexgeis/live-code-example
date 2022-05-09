@@ -6,11 +6,11 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 //ACE IMPORTS
-import { render } from "react-dom";
-import AceEditor from "react-ace";
-import "ace-builds/src-noconflict/mode-java";
-import "ace-builds/src-noconflict/theme-github";
-import "ace-builds/src-noconflict/ext-language_tools";
+// import { render } from "react-dom";
+// import AceEditor from "react-ace";
+// import "ace-builds/src-noconflict/mode-java";
+// import "ace-builds/src-noconflict/theme-github";
+// import "ace-builds/src-noconflict/ext-language_tools";
 
 //React Textarea Code Editor Import
 import CodeEditor from "@uiw/react-textarea-code-editor";
