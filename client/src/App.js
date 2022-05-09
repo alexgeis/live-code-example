@@ -29,7 +29,7 @@ function App() {
       <Nav />
 
       <main>
-        <div className="codeRow">
+        <div className="codeRow" id="codePenRow">
           <aside>
             <h2>Codepen Embed</h2>
             <li>code is not editable unless on a PRO membership - $96/year</li>
@@ -38,12 +38,6 @@ function App() {
           </aside>
 
           <div className="contents">
-            {/* CARD TEMPLATE */}
-            {/* <section className="card">
-              <header>Kitten for sale</header>
-              <img src="http://placekitten.com/200/300" alt="cute kitten" />
-              <p>Price: $300</p>
-            </section> */}
             <section className="codeBlock">
               <header>Diagonal Flexbox Example</header>
               <p
@@ -81,7 +75,7 @@ function App() {
             </section>
           </div>
         </div>
-        <div className="codeRow">
+        <div className="codeRow" id="codeSandboxRow">
           <aside>
             <h2>Code Sandbox</h2>
             <li>using iframe rather than html/javascript</li>
@@ -116,7 +110,7 @@ function App() {
           </div>
         </div>
 
-        <div className="codeRow">
+        <div className="codeRow" id="reactLiveCodeRow">
           <aside>
             <h2>
               <a
@@ -126,25 +120,20 @@ function App() {
                 React Live Code Editor
               </a>
             </h2>
-            <li>note 1 on this attempt</li>
-            <li>note 2 on this attempt</li>
+            <li>Open source</li>
+            <li>simple to use</li>
             <li>note 3 on this attempt</li>
           </aside>
 
           <div className="contents">
-            {/* CARD TEMPLATE */}
-            {/* <section className="card">
-              <header>Kitten for sale</header>
-              <img src="http://placekitten.com/200/300" alt="cute kitten" />
-              <p>Price: $300</p>
-            </section> */}
             <section className="codeBlock">
-              <header>Header</header>
+              <header>React Live Code Editor</header>
               <CodeEditor
-                value={code}
+                value={reactCodeEditor}
+                // data-color-mode="dark"
                 language="js"
                 placeholder="Please enter JS code."
-                onChange={(evn) => setCode(evn.target.value)}
+                onChange={(evn) => setReactCodeEditor(evn.target.value)}
                 padding={15}
                 style={{
                   fontSize: 12,
@@ -153,10 +142,16 @@ function App() {
                     "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
                 }}
               />
-              <p>Explanation of code</p>
+              <p>
+                A simple code editor with syntax highlighting. This library aims
+                to provide a simple code editor with syntax highlighting support
+                without any of the extra features, perfect for simple embeds and
+                forms where users can submit code.
+              </p>
             </section>
           </div>
         </div>
+
         <div className="codeRow">
           <aside>
             <h2>Live Code Editor Section Title</h2>
@@ -166,12 +161,6 @@ function App() {
           </aside>
 
           <div className="contents">
-            {/* CARD TEMPLATE */}
-            {/* <section className="card">
-              <header>Kitten for sale</header>
-              <img src="http://placekitten.com/200/300" alt="cute kitten" />
-              <p>Price: $300</p>
-            </section> */}
             <section className="codeBlock">
               <header>Header</header>
 

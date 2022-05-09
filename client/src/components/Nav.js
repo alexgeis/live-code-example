@@ -5,8 +5,9 @@ export default function Nav() {
   return (
     <>
       <nav>
-        <a href="#">Nav Link 1</a>
-        <a href="#">Nav Link 2</a>
+        <a href="#codePenRow">CodePen Example</a>
+        <a href="#codeSandboxRow">CodeSandbox Example</a>
+        <a href="#reactLiveCodeRow">React Live Code Editor Example</a>
       </nav>
     </>
   );
