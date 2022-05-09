@@ -68,8 +68,8 @@ function App() {
           <aside>
             <h2>Code Sandbox</h2>
             <li>using iframe rather than html/javascript</li>
-            <li>note 2 on this attempt</li>
-            <li>note 3 on this attempt</li>
+            <li>React example</li>
+            <li>Offers editting of App.js file</li>
           </aside>
 
           <div className="contents">
