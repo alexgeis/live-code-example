@@ -6,6 +6,14 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 function App() {
+  const ace = function (items) {
+    var x = "All this is syntax highlighted";
+    return x;
+  };
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/monokai");
+  editor.session.setMode("ace/mode/javascript");
+
   return (
     <div classNameName="App">
       <Header />
@@ -94,6 +102,28 @@ function App() {
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
                 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
               ></iframe>
+              <p>Explanation of code</p>
+            </section>
+          </div>
+        </div>
+        <div className="codeRow">
+          <aside>
+            <h2>Ace</h2>
+            <li>open source</li>
+            <li>note 2 on this attempt</li>
+            <li>note 3 on this attempt</li>
+          </aside>
+
+          <div className="contents">
+            {/* CARD TEMPLATE */}
+            {/* <section className="card">
+              <header>Kitten for sale</header>
+              <img src="http://placekitten.com/200/300" alt="cute kitten" />
+              <p>Price: $300</p>
+            </section> */}
+            <section className="codeBlock">
+              <header>Header</header>
+              <div id="editor"></div>
               <p>Explanation of code</p>
             </section>
           </div>
